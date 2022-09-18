@@ -1,0 +1,498 @@
+[
+    {
+        "palabra": "word",
+        "significado": "definition"
+    },
+    {
+        "palabra": "a",
+        "significado": "énfasis, emoción o confirmación"
+    },
+    {
+        "palabra": "akesi",
+        "significado": "reptil, anfibio"
+    },
+    {
+        "palabra": "ala",
+        "significado": "no, ninguno, cero, nada, se usa para hacer preguntas de si-no"
+    },
+    {
+        "palabra": "alasa",
+        "significado": "cazar, busqueda, intentar, probar"
+    },
+    {
+        "palabra": "ale, ali",
+        "significado": "todo, abundante, incontable, cada uno, abundancia, vida, universo, 100"
+    },
+    {
+        "palabra": "anpa",
+        "significado": "debajo, parte inferior, suelo, base, abajo, inclinarse, hacia abajo, humilde, moderado, dependiente"
+    },
+    {
+        "palabra": "ante",
+        "significado": "diferente, alterado, cambiado, otro"
+    },
+    {
+        "palabra": "anu",
+        "significado": "o, eleccion, decidir"
+    },
+    {
+        "palabra": "awen",
+        "significado": "duradero, mantener, proteger, asegurar, esperar, quedarse, continuar, mantener"
+    },
+    {
+        "palabra": "e",
+        "significado": "antes del objeto directo"
+    },
+    {
+        "palabra": "en",
+        "significado": "se situa entre varios sujetos"
+    },
+    {
+        "palabra": "esun",
+        "significado": "mercado, tienda, feria, bazar, transacción de dinero"
+    },
+    {
+        "palabra": "ijo",
+        "significado": "cosa, fenómeno, objeto, materia"
+    },
+    {
+        "palabra": "ike",
+        "significado": "malo, negativo, no esencial, irrelevante, complicado, complejo"
+    },
+    {
+        "palabra": "ilo",
+        "significado": "herramienta, implementar, maquina, dispositivo"
+    },
+    {
+        "palabra": "insa",
+        "significado": "centro, contenido, interior, en medio; organo interno, estómago"
+    },
+    {
+        "palabra": "jaki",
+        "significado": "desagradable, obsceno, enfermizo, tóxico, sucio, antihigiénico"
+    },
+    {
+        "palabra": "jan",
+        "significado": "humano, persona, alguien"
+    },
+    {
+        "palabra": "jelo",
+        "significado": "amarillo"
+    },
+    {
+        "palabra": "jo",
+        "significado": "tener, llevar, contener, sostener"
+    },
+    {
+        "palabra": "kala",
+        "significado": "pescado, animal marino"
+    },
+    {
+        "palabra": "kalama",
+        "significado": "producir sonido, recitar, decir en voz alta"
+    },
+    {
+        "palabra": "kama",
+        "significado": "llegar, venir, futuro, invocar, convertirse, lograr, tener éxito en"
+    },
+    {
+        "palabra": "kasi",
+        "significado": "planta, vegetación, hierba, hoja"
+    },
+    {
+        "palabra": "ken",
+        "significado": "ser capaz de, estar permitido, poder, ser posible"
+    },
+    {
+        "palabra": "kepeken",
+        "significado": "usar, con, por medio de"
+    },
+    {
+        "palabra": "kili",
+        "significado": "fruta, vegetal, seta"
+    },
+    {
+        "palabra": "kin",
+        "significado": "tambien, además, ademas de {ver a}"
+    },
+    {
+        "palabra": "kiwen",
+        "significado": "objeto duro, metal, roca, piedra"
+    },
+    {
+        "palabra": "ko",
+        "significado": "arcilla, masa, semi-solido, pasta, polvo"
+    },
+    {
+        "palabra": "kon",
+        "significado": "aire, respiración, aliento, esencia, espíritu, realidad paralela, invisible"
+    },
+    {
+        "palabra": "kule",
+        "significado": "colorido, pigmentado, pintado, relacionado con la comunidad LGBT+"
+    },
+    {
+        "palabra": "kulupu",
+        "significado": "comunidad, compañía, grupo, nacion, sociedad, tribu"
+    },
+    {
+        "palabra": "kute",
+        "significado": "oreja, escuchar, oir, prestar atencion, obedecer, atender, atender a"
+    },
+    {
+        "palabra": "la",
+        "significado": "(between the context phrase and the main sentence)"
+    },
+    {
+        "palabra": "lape",
+        "significado": "dormir, descansar"
+    },
+    {
+        "palabra": "laso",
+        "significado": "azul"
+    },
+    {
+        "palabra": "lawa",
+        "significado": "cabeza, mente, control, dirigir, guiar, planear, regular, legislar"
+    },
+    {
+        "palabra": "len",
+        "significado": "ropa, tela, textil, tapa, capa de privacidad"
+    },
+    {
+        "palabra": "lete",
+        "significado": "frio, enfriar, crudo"
+    },
+    {
+        "palabra": "li",
+        "significado": "(between any subject except mi alone or sina alone and its verb; also to introduce a new verb for the same subject)"
+    },
+    {
+        "palabra": "lili",
+        "significado": "pequeno, enano, corto, varios, joven"
+    },
+    {
+        "palabra": "linja",
+        "significado": "objeto largo y flexible, cuerda, pelo, hilo, cable, linea, conexión"
+    },
+    {
+        "palabra": "lipu",
+        "significado": "objeto plano, libro, documento, carta, papel, website"
+    },
+    {
+        "palabra": "loje",
+        "significado": "rojo"
+    },
+    {
+        "palabra": "lon",
+        "significado": "lugar, presente en, real, verdadero, existir, respuesta afirmativa"
+    },
+    {
+        "palabra": "luka",
+        "significado": "brazo, mano, organo tactil, cinco, tacto, sentir físicamente, interactuar, presionar"
+    },
+    {
+        "palabra": "lukin",
+        "significado": "ojo, mirar a, ver, examinar, observar, leer, mirar, buscar, intentar"
+    },
+    {
+        "palabra": "lupa",
+        "significado": "puerta, agujero, orificio, ventana"
+    },
+    {
+        "palabra": "ma",
+        "significado": "tierra, pais, exterior, mundo, continente, territorio"
+    },
+    {
+        "palabra": "mama",
+        "significado": "padre, madre, ancestro, creador, originario, cuidador"
+    },
+    {
+        "palabra": "mani",
+        "significado": "dinero, ahorros, riqueza, animal grande domesticado"
+    },
+    {
+        "palabra": "meli",
+        "significado": "mujer, femenino, persona femenina, esposa"
+    },
+    {
+        "palabra": "mi",
+        "significado": "Yo, mi, nosotros, nosotras"
+    },
+    {
+        "palabra": "mije",
+        "significado": "hommbre, masculino, persona masculina, marido"
+    },
+    {
+        "palabra": "moku",
+        "significado": "comer, beber, consumir, tragar, ingerir"
+    },
+    {
+        "palabra": "moli",
+        "significado": "muerto, morir, matar"
+    },
+    {
+        "palabra": "monsi",
+        "significado": "espalda, detrás, trasero"
+    },
+    {
+        "palabra": "mu",
+        "significado": "ruido o comunicación animal, vocalización no humana"
+    },
+    {
+        "palabra": "mun",
+        "significado": "luna, estrella, brillo, luz brillante, luz en la oscuridad"
+    },
+    {
+        "palabra": "musi",
+        "significado": "artistico, entretenimiento, frivolidad, jugar, divertido"
+    },
+    {
+        "palabra": "mute",
+        "significado": "muchos, varios, mas, muy, cantidad, tres o mas, 20"
+    },
+    {
+        "palabra": "namako",
+        "significado": "embellecer, añadido; extra, especias, adicional {ver sin}"
+    },
+    {
+        "palabra": "nanpa",
+        "significado": "-th (numero ordinal), numeros"
+    },
+    {
+        "palabra": "nasa",
+        "significado": "extraño, loco, raro, tonto, alcohol"
+    },
+    {
+        "palabra": "nasin",
+        "significado": "camino, carretera, calle, tradición, doctrina, método"
+    },
+    {
+        "palabra": "nena",
+        "significado": "relieve, bache, bulto, montaña, cuesta, protuberancia"
+    },
+    {
+        "palabra": "ni",
+        "significado": "esto, eso"
+    },
+    {
+        "palabra": "nimi",
+        "significado": "nombre, palabra"
+    },
+    {
+        "palabra": "noka",
+        "significado": "pie, pierna, organo locomotor, abajo, parte inferior"
+    },
+    {
+        "palabra": "o",
+        "significado": "hey! O!"
+    },
+    {
+        "palabra": "oko",
+        "significado": "{ver lukin} | ALT ojo, ocular, visual {cf. ver}"
+    },
+    {
+        "palabra": "olin",
+        "significado": "amor, tener compasión, respeto, mostrar afecto"
+    },
+    {
+        "palabra": "ona",
+        "significado": "el, ella, eso, elle"
+    },
+    {
+        "palabra": "open",
+        "significado": "inicio, empezar, abrir, encender"
+    },
+    {
+        "palabra": "pakala",
+        "significado": "estropeado, roto, dañado, herido, desastroso, ¡joder!)"
+    },
+    {
+        "palabra": "pali",
+        "significado": "hacer, trabajar, tomar acción en, construir, hacer, perparar"
+    },
+    {
+        "palabra": "palisa",
+        "significado": "palo, vara, rama, tronco, objeto largo y duro"
+    },
+    {
+        "palabra": "pan",
+        "significado": "cereal, grano, cebada, maiz, avena, arroz, trigo, pan, pasta"
+    },
+    {
+        "palabra": "pana",
+        "significado": "dar, enviar, emitir, proveer, poner, soltar"
+    },
+    {
+        "palabra": "pi",
+        "significado": "de, usado para dividir un segundo grupo de sustantivos que describe el primer grupo de sustantivos"
+    },
+    {
+        "palabra": "pilin",
+        "significado": "corazón (físico o emocional), sentimientos, experiencia directa"
+    },
+    {
+        "palabra": "pimeja",
+        "significado": "negro, oscuro, apagado"
+    },
+    {
+        "palabra": "pini",
+        "significado": "terminar, completar, acabar, fin, pasado, final"
+    },
+    {
+        "palabra": "pipi",
+        "significado": "bicho, insecto, hormiga, araña"
+    },
+    {
+        "palabra": "poka",
+        "significado": "cadera, lado, cerca de, próximo, junto con, al lado"
+    },
+    {
+        "palabra": "poki",
+        "significado": "contenedor, bolsa, cuenco, caja, taza, cajón, vasija"
+    },
+    {
+        "palabra": "pona",
+        "significado": "bueno, positivo, útil, amigable, pacífico, simple"
+    },
+    {
+        "palabra": "pu",
+        "significado": "interactuar con el libro oficial de Toki Pona {ver ku}"
+    },
+    {
+        "palabra": "sama",
+        "significado": "mismo, similar, cada uno, hermano, compañero, comparaciones, como"
+    },
+    {
+        "palabra": "seli",
+        "significado": "fuego, cocinar, reacción química, fuente de calor"
+    },
+    {
+        "palabra": "selo",
+        "significado": "forma exterior, capa exterior, ladrar, pelar, caparazón, piel, perímetro"
+    },
+    {
+        "palabra": "seme",
+        "significado": "que? como?"
+    },
+    {
+        "palabra": "sewi",
+        "significado": "arriba, superior, parte mas alta, elevado, impresionante, divino, sagrado, supernatural"
+    },
+    {
+        "palabra": "sijelo",
+        "significado": "cuerpo (de persona o animal), estado fisico, torso"
+    },
+    {
+        "palabra": "sike",
+        "significado": "redondo, circular, bola, circulo, bicicleta, esfera, rueda, ciclo de un año entero"
+    },
+    {
+        "palabra": "sin",
+        "significado": "nuevo, fresco, adicional, otro, extra"
+    },
+    {
+        "palabra": "sina",
+        "significado": "tu"
+    },
+    {
+        "palabra": "sinpin",
+        "significado": "cara, principal, frente, muro"
+    },
+    {
+        "palabra": "sitelen",
+        "significado": "imagen, fotografía, representación, simbolo, marca, escritura"
+    },
+    {
+        "palabra": "sona",
+        "significado": "saber, ser habilidoso en, conocedor de, que tiene información de, saber como"
+    },
+    {
+        "palabra": "soweli",
+        "significado": "animal, bestia, mamífero, animal terrestre"
+    },
+    {
+        "palabra": "suli",
+        "significado": "grande, pesado, grande, largo, alto, importante, adulto"
+    },
+    {
+        "palabra": "suno",
+        "significado": "sol, luz, brillo, resplandor, radiar, brillar, fuente de luz"
+    },
+    {
+        "palabra": "supa",
+        "significado": "superficie horizontal, objeto sobre el que dormir"
+    },
+    {
+        "palabra": "suwi",
+        "significado": "dulce, fragancia, lindo, inocente, adorable"
+    },
+    {
+        "palabra": "tan",
+        "significado": "por, de, porque, origen, causa"
+    },
+    {
+        "palabra": "taso",
+        "significado": "pero, sin embargo, solo"
+    },
+    {
+        "palabra": "tawa",
+        "significado": "ir a, hacia, desde la perspectiva de, moverse, ir a..."
+    },
+    {
+        "palabra": "telo",
+        "significado": "agua, liquido, fluido, mojado, bebidas"
+    },
+    {
+        "palabra": "tenpo",
+        "significado": "tiempo, duración, momento, ocasión, periodo, situación"
+    },
+    {
+        "palabra": "toki",
+        "significado": "comunicar, decir, hablar, hola, saludar"
+    },
+    {
+        "palabra": "tomo",
+        "significado": "espacio interior, edificio, hogar, casa, habitación"
+    },
+    {
+        "palabra": "tu",
+        "significado": "dos"
+    },
+    {
+        "palabra": "unpa",
+        "significado": "sexo, sensual"
+    },
+    {
+        "palabra": "uta",
+        "significado": "boca, labios, cavidad oral, mandíbula"
+    },
+    {
+        "palabra": "utala",
+        "significado": "batalla, reto, competir, difícil"
+    },
+    {
+        "palabra": "walo",
+        "significado": "blanco, blanquecino, pálido"
+    },
+    {
+        "palabra": "wan",
+        "significado": "único, unido, uno"
+    },
+    {
+        "palabra": "waso",
+        "significado": "pájaro, criatura voladora, animal con alas"
+    },
+    {
+        "palabra": "wawa",
+        "significado": "fuerte, poderoso, confianza, firme, energético, intenso"
+    },
+    {
+        "palabra": "weka",
+        "significado": "ausente, lejos, ignorado, echar de menos"
+    },
+    {
+        "palabra": "wile",
+        "significado": "deber, necesitar, requerir, debería, quiero, deseo, querer"
+    }
+]
