@@ -1,0 +1,297 @@
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+@font-face {
+    font-family: linja_pona;
+    src: url("./linja-pona-4.9.otf") format("opentype");
+}
+  .sticky-header__header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #333;
+    color: white;
+    margin-bottom: 2em;
+}
+html{
+    scroll-behavior: smooth;
+    /* height: 100%; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #333;
+    /* height: 100%; */
+    background-color: #85FFBD; 
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); 
+}
+
+h1{
+    font-size: 8em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 3em;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5em;
+}
+#info{
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+p{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 3em;
+    margin-top: 1em;
+    padding: 0.3em;
+}
+.cabecera{
+    margin:0;
+    margin-left: 1em;
+}
+.smiley{
+    width: 25%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.container_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+.description{
+    width:70%;
+    text-align: center;
+    margin:0;
+
+}
+.formula{
+    width:70%;
+    text-align: center;
+    margin: 1em;
+}
+.description_left{
+    width:30%;
+    text-align: left;
+    margin:0;
+
+}
+.description_right{
+    width:30%;
+    text-align: right;
+    margin:0;
+
+}
+.title{
+    width:70%;
+    text-align:center;
+}
+.nav__ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    margin-bottom: 4rem;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+h1[data-trad], 
+h2[data-trad], 
+p[data-trad],
+a[data-trad] {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  h1[data-trad]:hover::after,
+  h1[data-trad]:focus::after,
+  h2[data-trad]:hover::after,
+  h2[data-trad]:focus::after,
+  p[data-trad]:hover::after,
+  p[data-trad]:focus::after,
+  a[data-trad]:hover::after,
+  a[data-trad]:focus::after {
+    content: attr(data-trad);
+    position: fixed;
+    left: 0;
+    top:90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px #aaaaaa solid;
+    border-radius: 10px;
+    background-color: #333;
+    padding: 12px;
+    color: #85FFBD;
+    font-size: 14px;
+    z-index: 1;
+  }
+.helper{
+    position:fixed;
+    top: 9%;
+
+}
+
+.tokipona{
+    width:70%;
+margin:0;
+padding:0;
+font-family: linja_pona;
+font-size: 3.5em;
+text-align: center;
+  }
+
+  .grid {
+    display: flex;
+
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+    margin:0;
+    width:50%;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    width:10em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+mark{
+    color: #333;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin:0.2em;
+}
+
+.sujeto{
+    background-color: #4394ff;
+}
+
+.verbo{
+    background-color: #ff4d4d;
+}
+#tokipona{
+    font-family: linja_pona;
+    font-size: 1.5em;
+}
+@media only screen and (max-width: 800px) {
+
+    h1{
+        font-size: 3em;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        font-size: 3em;
+        font-weight: 100;
+        margin: 0;
+        margin-top:0.5em;
+        padding: 0;
+    }
+    p{
+        font-size: 1.5em;
+        font-weight: 400;
+        margin-top: 1em;
+        padding: 0.3em;
+    }
+    #ascii{
+        font-size: 1.5em;
+    }
+    .grid {
+        display: flex;
+    
+        /* Put a card in the next row when previous cards take all width */
+        flex-wrap: wrap;
+        margin:0;
+        width:80%;
+        justify-content: center;
+    }
+    .tokipona{
+    width:70%;
+    margin:0;
+    padding:0;
+    font-family: linja_pona;
+    text-align: center;
+    font-size: 6em;
+    }
+
+    .description_left{
+        width:80%;
+        text-align: left;
+        margin:0;
+    
+    }
+    .description_right{
+        width:80%;
+        text-align: right;
+        margin:0;
+    
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        width:7em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    mark{
+        color: #333;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        margin-right: 0;
+        margin-left:0;
+        font-size: 0.8em;
+        
+    }
+
+  }
