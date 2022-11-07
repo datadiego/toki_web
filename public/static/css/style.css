@@ -107,8 +107,29 @@ p{
 
 }
 .title{
-    width:70%;
+    width:100%;
     text-align:center;
+}
+#seccion_diccionario{
+    width:600px;
+}
+hr{
+    width: 100%;
+    margin: 0;
+    border-top: solid 5px;
+    color:#333;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.entrada_diccionario{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-top: 0.5em;
 }
 .nav__ul{
     display: flex;
