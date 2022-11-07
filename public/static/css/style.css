@@ -111,7 +111,7 @@ p{
     text-align:center;
 }
 #seccion_diccionario{
-    width:600px;
+    width:30%;
 }
 hr{
     width: 100%;
@@ -313,6 +313,9 @@ mark{
         margin-left:0;
         font-size: 0.8em;
         
+    }
+    #seccion_diccionario{
+        width:80%;
     }
 
   }
