@@ -125,10 +125,10 @@ nav{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #333;
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 200; 
     margin: 0;
     padding: 0;
 }
