@@ -26,7 +26,7 @@ const genera_ronda = () => {
 
 //Agrega cuatro palabras aleatorias a palabras_ronda
     for (let i = 0; i < 4; i++) {
-        const nueva = palabra_aleatoria()
+        let nueva = palabra_aleatoria()
         while (nueva == palabra_premio.value) {
             nueva = palabra_aleatoria()
         }
@@ -73,11 +73,12 @@ genera_ronda()
 
 <template>
         <div class="container text-center mt-5">
-        <h1>toki pona flashcards</h1>
+        <h1 id="toki">kama sona e nimi pi toki+pona</h1>
         
-        <h2>Puntos: {{aciertos-fallos}}</h2>
+        <!-- <h2 id="toki">nanpa e {{aciertos-fallos}}</h2> -->
         <h3>Aciertos: {{aciertos}}</h3>
         <h3>Fallos: {{fallos}}</h3>
+        <h1 id="toki_grande">{{palabra_premio["palabra"]}}</h1>
         <div class="btn-group-vertical btn-group-lg">
             <button v-bind:class="estado_titulo">{{palabra_premio["palabra"]}}</button>
             <button @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["significado"]}}</button>
@@ -90,6 +91,19 @@ genera_ronda()
 
 
 <style>
+@font-face {
+    font-family: linja_pona;
+    src: url("./assets/linja-pona-4.9.otf") format("opentype");
+}
+
+#toki{
+    font-family: "linja_pona";
+    font-size: 3em;
+}
+#toki_grande{
+    font-family: "linja_pona";
+    font-size: 5em;
+}
 @media (hover: none) {
     .inactive:hover {
         background-color: white;
