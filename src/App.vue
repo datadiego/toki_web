@@ -27,7 +27,7 @@ const genera_ronda = () => {
 //Agrega cuatro palabras aleatorias a palabras_ronda
     for (let i = 0; i < 4; i++) {
         let nueva = palabra_aleatoria()
-        while (nueva == palabra_premio.value) {
+        while (nueva == palabra_premio.value || palabras_ronda.value.includes(nueva)) {
             nueva = palabra_aleatoria()
         }
         palabras_ronda.value.push(nueva)
