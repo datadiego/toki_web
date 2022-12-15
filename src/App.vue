@@ -72,8 +72,8 @@ genera_ronda()
 </script>
 
 <template>
-        <div class="container text-center mt-5">
-        <h1 id="toki">kama sona e nimi pi toki+pona</h1>
+        <div class="container text-center mt-3">
+        <h1 id="toki_titulo">kama sona e nimi pi toki+pona</h1>
         
         <!-- <h2 id="toki">nanpa e {{aciertos-fallos}}</h2> -->
         <h3 id="toki">toki+pona li nanpa{{aciertos}}</h3>
@@ -92,11 +92,12 @@ genera_ronda()
 
 <style>
 body{
-background-color: rgb(32, 32, 32);
+background-color: rgb(48, 48, 48);
 }
 h1,h2,h3{
     color: rgb(215, 215, 215);
 }
+
 @font-face {
     font-family: linja_pona;
     src: url("./assets/linja-pona-4.9.otf") format("opentype");
@@ -110,14 +111,19 @@ h1,h2,h3{
     font-family: "linja_pona";
     font-size: 5em;
 }
+#toki_titulo{
+    font-family: "linja_pona";
+    font-size: 3em;
+    color: rgb(126, 255, 175);
+}
 @media (hover: none) {
     .inactive:hover {
-        background-color: white;
-        color:black;
+        color: rgb(215, 215, 215);
+        background-color: rgb(48, 48, 48);
     }
     .active:hover{
-        background-color: white;
-        color:black;
+        color: rgb(215, 215, 215);
+        background-color: rgb(48, 48, 48);
     }
 }
 </style>
