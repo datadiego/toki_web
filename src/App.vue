@@ -5,11 +5,11 @@ import csv from "./assets/tokipona.csv";
 const numero_aleatorio = (max) => Math.floor(Math.random() * max);
 const palabra_aleatoria = () => csv[Math.floor(Math.random() * csv.length)];
 
-const estado_titulo = ref("btn btn-dark")
-const estado_boton1 = ref("btn btn-outline-dark inactive")
-const estado_boton2 = ref("btn btn-outline-dark inactive")
-const estado_boton3 = ref("btn btn-outline-dark inactive")
-const estado_boton4 = ref("btn btn-outline-dark inactive")
+const estado_titulo = ref("btn btn-light")
+const estado_boton2 = ref("btn btn-outline-light inactive")
+const estado_boton3 = ref("btn btn-outline-light inactive")
+const estado_boton4 = ref("btn btn-outline-light inactive")
+const estado_boton1 = ref("btn btn-outline-light inactive")
 const pregunta_premiada = ref(0);
 const puntos = ref(0);
 const aciertos = ref(0);
@@ -35,11 +35,11 @@ const genera_ronda = () => {
     //Sustituye uno de los elementos de la ronda por la premiada
     pregunta_premiada.value = numero_aleatorio(palabras_ronda.value.length);
     palabras_ronda.value[pregunta_premiada.value] = palabra_premio.value;
-    estado_titulo.value = "btn btn-dark"
-    estado_boton1.value = "btn btn-outline-dark inactive"
-    estado_boton2.value = "btn btn-outline-dark inactive"
-    estado_boton3.value = "btn btn-outline-dark inactive"
-    estado_boton4.value = "btn btn-outline-dark inactive"
+    estado_titulo.value = "btn btn-light"
+    estado_boton1.value = "btn btn-outline-light inactive"
+    estado_boton2.value = "btn btn-outline-light inactive"
+    estado_boton3.value = "btn btn-outline-light inactive"
+    estado_boton4.value = "btn btn-outline-light inactive"
     }
 
 const comprueba_respuesta = (respuesta) => {
@@ -91,6 +91,12 @@ genera_ronda()
 
 
 <style>
+body{
+background-color: rgb(32, 32, 32);
+}
+h1,h2,h3{
+    color: rgb(215, 215, 215);
+}
 @font-face {
     font-family: linja_pona;
     src: url("./assets/linja-pona-4.9.otf") format("opentype");
