@@ -65,7 +65,7 @@ if(pregunta_premiada.value == 0){
 //haz un setTimeout para que se vea el color de la respuesta
 setTimeout(() => {
     genera_ronda();
-}, 1000);
+}, 1314);
 }
 
 genera_ronda()
