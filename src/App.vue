@@ -17,6 +17,8 @@ const fallos = ref(0);
 const palabra_premio = ref(palabra_aleatoria());
 const palabras_ronda = ref([])
 const respuesta_seleccionada = ref("")
+const tipos_tarjeta = ref(["toki_esp", "esp_toki"])
+const tipo_tarjeta = ref("toki_esp")
 
 const respuesta_correcta = (r) => palabra_premio.value["significado"] == r;
 const genera_ronda = () => {
@@ -80,11 +82,20 @@ genera_ronda()
         <h3 id="toki">toki+ike li nanpa{{fallos}}</h3>
         <h1 id="toki_grande">{{palabra_premio["palabra"]}}</h1>
         <div class="btn-group-vertical btn-group-lg">
-            <button v-bind:class="estado_titulo">{{palabra_premio["palabra"]}}</button>
-            <button @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["significado"]}}</button>
-            <button @click="comprueba_respuesta(palabras_ronda[1]['significado'])" v-bind:class="estado_boton2" role="button">{{palabras_ronda[1]["significado"]}}</button>
-            <button @click="comprueba_respuesta(palabras_ronda[2]['significado'])" v-bind:class="estado_boton3" role="button">{{palabras_ronda[2]["significado"]}}</button>
-            <button @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["significado"]}}</button>
+            <button v-if="tipo_tarjeta=='toki_esp'" v-bind:class="estado_titulo">{{palabra_premio["significado"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" v-bind:class="estado_titulo">{{palabra_premio["significado"]}}</button>
+
+            <button v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["palabra"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["significado"]}}</button>
+
+            <button v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[1]['significado'])" v-bind:class="estado_boton2" role="button">{{palabras_ronda[1]["palabra"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[1]['significado'])" v-bind:class="estado_boton2" role="button">{{palabras_ronda[1]["significado"]}}</button>
+
+            <button v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[2]['significado'])" v-bind:class="estado_boton3" role="button">{{palabras_ronda[2]["palabra"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[2]['significado'])" v-bind:class="estado_boton3" role="button">{{palabras_ronda[2]["significado"]}}</button>
+
+            <button v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["palabra"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["significado"]}}</button>
         </div>
     </div>
 </template>
@@ -101,6 +112,11 @@ h1,h2,h3{
 @font-face {
     font-family: linja_pona;
     src: url("./assets/linja-pona-4.9.otf") format("opentype");
+}
+@media (min-width: 768px) {
+    .btn-group-lg>.btn, .btn-lg{
+        min-width: 500px;
+    }
 }
 
 #toki{
