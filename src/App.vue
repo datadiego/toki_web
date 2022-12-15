@@ -18,13 +18,14 @@ const palabra_premio = ref(palabra_aleatoria());
 const palabras_ronda = ref([])
 const respuesta_seleccionada = ref("")
 const tipos_tarjeta = ref(["toki_esp", "esp_toki"])
-const tipo_tarjeta = ref("toki_esp")
+const tipo_tarjeta = ref("")
 
 const respuesta_correcta = (r) => palabra_premio.value["significado"] == r;
 const genera_ronda = () => {
     palabras_ronda.value = [];
     palabra_premio.value = palabra_aleatoria();
     respuesta_seleccionada.value = "";
+    tipo_tarjeta.value = tipos_tarjeta.value[numero_aleatorio(tipos_tarjeta.value.length)]
 
 //Agrega cuatro palabras aleatorias a palabras_ronda
     for (let i = 0; i < 4; i++) {
@@ -83,7 +84,7 @@ genera_ronda()
         <h1 id="toki_grande">{{palabra_premio["palabra"]}}</h1>
         <div class="btn-group-vertical btn-group-lg">
             <button v-if="tipo_tarjeta=='toki_esp'" v-bind:class="estado_titulo">{{palabra_premio["significado"]}}</button>
-            <button v-if="tipo_tarjeta=='esp_toki'" v-bind:class="estado_titulo">{{palabra_premio["significado"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" v-bind:class="estado_titulo">{{palabra_premio["palabra"]}}</button>
 
             <button v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["palabra"]}}</button>
             <button v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["significado"]}}</button>
