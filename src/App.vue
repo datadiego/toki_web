@@ -76,8 +76,8 @@ genera_ronda()
         <h1 id="toki">kama sona e nimi pi toki+pona</h1>
         
         <!-- <h2 id="toki">nanpa e {{aciertos-fallos}}</h2> -->
-        <h3>Aciertos: {{aciertos}}</h3>
-        <h3>Fallos: {{fallos}}</h3>
+        <h3 id="toki">toki+pona li nanpa{{aciertos}}</h3>
+        <h3 id="toki">toki+ike li nanpa{{fallos}}</h3>
         <h1 id="toki_grande">{{palabra_premio["palabra"]}}</h1>
         <div class="btn-group-vertical btn-group-lg">
             <button v-bind:class="estado_titulo">{{palabra_premio["palabra"]}}</button>
