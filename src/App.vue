@@ -98,6 +98,10 @@ genera_ronda()
             <button v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["palabra"]}}</button>
             <button v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["significado"]}}</button>
         </div>
+            
+        <footer>
+                <a href="https://github.com/datadiego/toki_web">github</a>
+            </footer>
     </div>
 </template>
 
@@ -105,9 +109,39 @@ genera_ronda()
 <style>
 body{
 background-color: rgb(48, 48, 48);
+
 }
-h1,h2,h3{
+h1,h2,h3,p,br, hr,footer{
     color: rgb(215, 215, 215);
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:30px;   /* Height of the footer */
+    
+
+}
+
+a:link {
+    flex: 1;
+    text-align: center;
+    color: rgb(215, 215, 215);
+}
+a:visited {
+    flex: 1;
+    text-align: center;
+    color: rgb(215, 215, 215);
+}
+a:hover {
+    flex: 1;
+    text-align: center;
+    color: rgb(126, 255, 175);
+}
+a:active {
+    flex: 1;
+    text-align: center;
+    color: rgb(126, 255, 175);
 }
 
 @font-face {
