@@ -21,22 +21,29 @@ const tipos_tarjeta = ref(["toki_esp", "esp_toki"])
 const tipo_tarjeta = ref("")
 const deactivate_buttons = ref(false)
 const respuesta_correcta = (r) => palabra_premio.value["significado"] == r;
+const nueva_palabra = ref(palabra_aleatoria());
 const genera_ronda = () => {
     palabras_ronda.value = [];
     palabra_premio.value = palabra_aleatoria();
     respuesta_seleccionada.value = "";
     tipo_tarjeta.value = tipos_tarjeta.value[numero_aleatorio(tipos_tarjeta.value.length)]
-
 //Agrega cuatro palabras aleatorias a palabras_ronda
     for (let i = 0; i < 4; i++) {
-        let nueva = palabra_aleatoria()
-        while (nueva == palabra_premio.value || palabras_ronda.value.includes(nueva)) {
-            nueva = palabra_aleatoria()
+        nueva_palabra.value = palabra_aleatoria()
+        //Comprueba que la palabra nueva no es la misma que la premiada
+        while (nueva_palabra.value["palabra"] == palabra_premio.value["palabra"]) {
+            nueva_palabra.value = palabra_aleatoria()
         }
-        palabras_ronda.value.push(nueva)
+        // Comprueba que la palabra nueva no está ya en la ronda
+        while (palabras_ronda.value.includes(nueva_palabra.value)) {
+            nueva_palabra.value = palabra_aleatoria()
+        }
+
+        
+        palabras_ronda.value.push(nueva_palabra.value)
     }
     //Sustituye uno de los elementos de la ronda por la premiada
-    pregunta_premiada.value = numero_aleatorio(palabras_ronda.value.length);
+    pregunta_premiada.value = numero_aleatorio(palabras_ronda.value.length-1);
     palabras_ronda.value[pregunta_premiada.value] = palabra_premio.value;
     estado_titulo.value = "btn btn-light"
     estado_boton1.value = "btn btn-outline-light inactive"
