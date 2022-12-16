@@ -99,9 +99,9 @@ genera_ronda()
             <button v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["significado"]}}</button>
         </div>
             
-        <footer>
+        <!-- <footer>
                 <a href="https://github.com/datadiego/toki_web">github</a>
-            </footer>
+            </footer> -->
     </div>
 </template>
 
