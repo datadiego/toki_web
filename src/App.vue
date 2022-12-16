@@ -90,7 +90,7 @@ genera_ronda()
         <!-- <h2 id="toki">nanpa e {{aciertos-fallos}}</h2> -->
         <h3 id="toki">toki+pona li nanpa{{aciertos}}</h3>
         <h3 id="toki">toki+ike li nanpa{{fallos}}</h3>
-        <h1 id="toki_grande">{{palabra_premio["palabra"]}}</h1>
+        <h1 id="toki_grande" class="tarjeta"><span class="badge bg-success">{{palabra_premio["palabra"]}}</span></h1>
         <div class="btn-group-vertical btn-group-lg">
             <button v-if="tipo_tarjeta=='toki_esp'" v-bind:class="estado_titulo">{{palabra_premio["significado"]}}</button>
             <button v-if="tipo_tarjeta=='esp_toki'" v-bind:class="estado_titulo">{{palabra_premio["palabra"]}}</button>
@@ -123,6 +123,11 @@ background-color: rgb(48, 48, 48);
 h1,h2,h3,p,br, hr,footer{
     color: rgb(215, 215, 215);
 }
+.tarjeta{
+    margin-bottom: 0.2em;
+}
+
+
 footer{
     position:fixed;
     bottom:0;
@@ -145,12 +150,12 @@ a:visited {
 a:hover {
     flex: 1;
     text-align: center;
-    color: rgb(126, 255, 175);
+    color: rgb(25, 135, 84);
 }
 a:active {
     flex: 1;
     text-align: center;
-    color: rgb(126, 255, 175);
+    color: rgb(25, 135, 84);
 }
 
 @font-face {
@@ -174,7 +179,9 @@ a:active {
 #toki_titulo{
     font-family: "linja_pona";
     font-size: 3em;
-    color: rgb(126, 255, 175);
+    font-weight: 700;
+    /* color: rgb(25, 135, 84); */
+    color: white;
 }
 @media (hover: none) {
     .inactive:hover {
