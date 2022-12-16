@@ -10,6 +10,7 @@ const estado_boton2 = ref("btn btn-outline-light inactive")
 const estado_boton3 = ref("btn btn-outline-light inactive")
 const estado_boton4 = ref("btn btn-outline-light inactive")
 const estado_boton1 = ref("btn btn-outline-light inactive")
+const estado_badge = ref("badge bg-secondary")
 const pregunta_premiada = ref(0);
 const puntos = ref(0);
 const aciertos = ref(0);
@@ -27,6 +28,7 @@ const genera_ronda = () => {
     palabra_premio.value = palabra_aleatoria();
     respuesta_seleccionada.value = "";
     tipo_tarjeta.value = tipos_tarjeta.value[numero_aleatorio(tipos_tarjeta.value.length)]
+    estado_badge.value = "badge bg-secondary"   
 //Agrega cuatro palabras aleatorias a palabras_ronda
     for (let i = 0; i < 4; i++) {
         nueva_palabra.value = palabra_aleatoria()
@@ -53,17 +55,28 @@ const genera_ronda = () => {
     deactivate_buttons.value = false
     }
 
-const comprueba_respuesta = (respuesta) => {
+const comprueba_respuesta = (respuesta, n_boton) => {
     deactivate_buttons.value = true
     respuesta_seleccionada.value = respuesta;
  if (respuesta_correcta(respuesta)) {
     puntos.value += 1;
     aciertos.value += 1;
     estado_titulo.value = "btn btn-success"
+    estado_badge.value = "badge bg-success"
  } else {
+    if(n_boton == 1){
+        estado_boton1.value = "btn btn-danger"
+    } else if(n_boton == 2){
+        estado_boton2.value = "btn btn-danger"
+    } else if(n_boton == 3){
+        estado_boton3.value = "btn btn-danger"
+    } else if(n_boton == 4){
+        estado_boton4.value = "btn btn-danger"
+    }
     puntos.value -= 1;
     fallos.value += 1;
     estado_titulo.value = "btn btn-danger"
+    estado_badge.value = "badge bg-danger"
  }
 if(pregunta_premiada.value == 0){
     estado_boton1.value = "btn btn-success"
@@ -74,6 +87,7 @@ if(pregunta_premiada.value == 0){
 } else if(pregunta_premiada.value == 3){
     estado_boton4.value = "btn btn-success"
 }
+
 //haz un setTimeout para que se vea el color de la respuesta
 setTimeout(() => {
     genera_ronda();
@@ -90,22 +104,22 @@ genera_ronda()
         <!-- <h2 id="toki">nanpa e {{aciertos-fallos}}</h2> -->
         <h3 id="toki">toki+pona li nanpa{{aciertos}}</h3>
         <h3 id="toki">toki+ike li nanpa{{fallos}}</h3>
-        <h1 id="toki_grande" class="tarjeta"><span class="badge bg-success">{{palabra_premio["palabra"]}}</span></h1>
+        <h1 id="toki_grande" class="tarjeta"><span v-bind:class="estado_badge">{{palabra_premio["palabra"]}}</span></h1>
         <div class="btn-group-vertical btn-group-lg">
-            <button v-if="tipo_tarjeta=='toki_esp'" v-bind:class="estado_titulo">{{palabra_premio["significado"]}}</button>
-            <button v-if="tipo_tarjeta=='esp_toki'" v-bind:class="estado_titulo">{{palabra_premio["palabra"]}}</button>
+            <button v-if="tipo_tarjeta=='toki_esp'" class="btn btn-light">{{palabra_premio["significado"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" class="btn btn-light">{{palabra_premio["palabra"]}}</button>
 
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["palabra"]}}</button>
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[0]['significado'])" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["significado"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[0]['significado'], 1)" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["palabra"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[0]['significado'], 1)" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["significado"]}}</button>
 
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[1]['significado'])" v-bind:class="estado_boton2" role="button">{{palabras_ronda[1]["palabra"]}}</button>
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[1]['significado'])" v-bind:class="estado_boton2" role="button">{{palabras_ronda[1]["significado"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[1]['significado'], 2)" v-bind:class="estado_boton2" role="button">{{palabras_ronda[1]["palabra"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[1]['significado'], 2)" v-bind:class="estado_boton2" role="button">{{palabras_ronda[1]["significado"]}}</button>
 
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[2]['significado'])" v-bind:class="estado_boton3" role="button">{{palabras_ronda[2]["palabra"]}}</button>
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[2]['significado'])" v-bind:class="estado_boton3" role="button">{{palabras_ronda[2]["significado"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[2]['significado'], 3)" v-bind:class="estado_boton3" role="button">{{palabras_ronda[2]["palabra"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[2]['significado'], 3)" v-bind:class="estado_boton3" role="button">{{palabras_ronda[2]["significado"]}}</button>
 
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["palabra"]}}</button>
-            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[3]['significado'])" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["significado"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[3]['significado'], 4)" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["palabra"]}}</button>
+            <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[3]['significado'], 4)" v-bind:class="estado_boton4" role="button">{{palabras_ronda[3]["significado"]}}</button>
         </div>
             
         <!-- <footer>
