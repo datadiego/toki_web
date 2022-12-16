@@ -106,8 +106,8 @@ genera_ronda()
         <h3 id="toki">toki+ike li nanpa{{fallos}}</h3>
         <h1 id="toki_grande" class="tarjeta"><span v-bind:class="estado_badge">{{palabra_premio["palabra"]}}</span></h1>
         <div class="btn-group-vertical btn-group-lg">
-            <button v-if="tipo_tarjeta=='toki_esp'" class="btn btn-light">{{palabra_premio["significado"]}}</button>
-            <button v-if="tipo_tarjeta=='esp_toki'" class="btn btn-light">{{palabra_premio["palabra"]}}</button>
+            <button v-if="tipo_tarjeta=='toki_esp'" class="btn btn-light" id="titulo">{{palabra_premio["significado"]}}</button>
+            <button v-if="tipo_tarjeta=='esp_toki'" class="btn btn-light" id="titulo">{{palabra_premio["palabra"]}}</button>
 
             <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='toki_esp'" @click="comprueba_respuesta(palabras_ronda[0]['significado'], 1)" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["palabra"]}}</button>
             <button :disabled="deactivate_buttons" v-if="tipo_tarjeta=='esp_toki'" @click="comprueba_respuesta(palabras_ronda[0]['significado'], 1)" v-bind:class="estado_boton1" role="button">{{palabras_ronda[0]["significado"]}}</button>
@@ -141,6 +141,9 @@ h1,h2,h3,p,br, hr,footer{
     margin-bottom: 0.2em;
 }
 
+button#titulo{
+    font-size: 2em;
+}
 
 footer{
     position:fixed;
