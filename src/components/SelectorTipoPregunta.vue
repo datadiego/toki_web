@@ -2,12 +2,12 @@
     <div>
         <select v-model="tipo_de_ronda" name="selectPregunta">
             <option value="aleatorio">Aleatorio</option>
-            <option value="hangul_español">sitelen pona > Español</option>
-            <option value="hangul_coreano">sitelen pona > toki pona</option>
-            <option value="coreano_español">toki pona > Español</option>
-            <option value="coreano_hangul">toki pona > sitelen pona</option>
-            <option value="español_hangul">Español > sitelen pona</option>
-            <option value="español_coreano">Español > toki pona</option>
+            <option value="sitelen_esp">sitelen pona > Español</option>
+            <option value="sitelen_toki">sitelen pona > toki pona</option>
+            <option value="toki_esp">toki pona > Español</option>
+            <option value="toki_sitelen">toki pona > sitelen pona</option>
+            <option value="esp_sitelen">Español > sitelen pona</option>
+            <option value="esp_toki">Español > toki pona</option>
             
           </select>
     </div>

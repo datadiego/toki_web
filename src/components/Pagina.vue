@@ -1,6 +1,6 @@
 <template>
     <div class="page-cointainer">
-        <h1 id="kimchichards">🥬 toki pona 🥬</h1>
+        <h1 id="titulo" class="toki">kama sona e toki+pona</h1>
         <div id="juego">
             <div v-if="leccion_cargada">
                 <Puntos :aciertos="aciertos" :fallos="fallos" />
@@ -160,6 +160,10 @@ export default {
     font-family: 'linjapona';
     src: url('../assets/linja-sike-5.otf');
 }
+#titulo{
+    font-size: 100px;
+    margin: 15px;
+}
 .toki{
     font-family: "linjapona";
 }
@@ -282,9 +286,6 @@ button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-#kimchicards{
-    color: #ffd54f
 }
 @media screen and (max-width: 670px){
 
