@@ -89,7 +89,7 @@ li{
     box-shadow: 3px 3px 0px #073B4C;
     margin-bottom: 30px;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 li:hover{
     background-color: #ffa7ff;
@@ -97,6 +97,10 @@ li:hover{
 li:active{
     background-color: lightgreen;
 }
-
+@media screen and (min-width: 600px){
+    li{
+        font-size: 1.5;
+    }
+}
 
 </style>
