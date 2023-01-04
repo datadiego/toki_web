@@ -166,7 +166,6 @@ export default {
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #1d1d1d;
     margin: 0;
     padding: 0;
 }
@@ -177,7 +176,8 @@ body{
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background-color: #ff9cf7;
+    background-color: #118ab2;
+    color: antiquewhite;
     text-align: center;
     min-height: 100vh;
 }
@@ -197,20 +197,20 @@ body{
     height: 100%;
 }
 #juego{
-    background-color: rgb(255, 255, 141);
+    background-color: #06D6A0;
     padding: 12px;
     border-radius: 12px;
-    box-shadow: 0px 8px 0px #a0a000;
-    border: 6px solid #a0a000;
+    box-shadow: 0px 8px 0px #073B4C;
+    border: 6px solid #FFD166;
     margin: 0px;
     width: 600px;
     margin-bottom: 20px
 }
 #pregunta_actual{
-    background-color: #ff00ff  ;
-    color: #212121 ;
-    border: 6px solid #a000a0;
-    box-shadow: 0px 8px 0px #550044;
+    background-color: #118AB2  ;
+    color: antiquewhite ;
+    border: 6px solid #FFD166;
+    box-shadow: 0px 8px 0px #073B4C;
     font-size: 50px;
     border-radius: 10px;
     padding: 12px;
@@ -254,8 +254,8 @@ button{
 #respuesta_correcta{
     background-color: #81ffa1  ;
     color: #212121 ;
-    border: 6px solid #a000a0;
-    box-shadow: 0px 8px 0px #550044;
+    border: 6px solid #FFD166;
+    box-shadow: 0px 8px 0px #073B4C;
     font-size: 30px;
     border-radius: 10px;
     padding: 12px;
@@ -268,10 +268,10 @@ button{
     margin-bottom: 60px;
 }
 #respuesta_incorrecta{
-    background-color: #ff6a6a  ;
+    background-color: #EF476F  ;
     color: #212121 ;
-    border: 6px solid #a000a0;
-    box-shadow: 0px 8px 0px #550044;
+    border: 6px solid #FFD166;
+    box-shadow: 0px 8px 0px #073B4C;
     font-size: 30px;
     border-radius: 10px;
     padding: 12px;
@@ -286,7 +286,7 @@ button{
 #kimchicards{
     color: #ffd54f
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 670px){
 
     #pregunta_actual{
         font-size: 40px;
