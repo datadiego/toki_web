@@ -1,11 +1,12 @@
 {
-  "name": "toki_flashcards",
+  "name": "base_vue",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:unit": "vitest --environment jsdom --root src/"
   },
   "dependencies": {
     "vue": "^3.2.45"
@@ -13,6 +14,9 @@
   "devDependencies": {
     "@rollup/plugin-dsv": "^3.0.1",
     "@vitejs/plugin-vue": "^4.0.0",
-    "vite": "^4.0.0"
+    "@vue/test-utils": "^2.2.6",
+    "jsdom": "^20.0.3",
+    "vite": "^4.0.0",
+    "vitest": "^0.25.6"
   }
 }

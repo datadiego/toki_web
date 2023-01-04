@@ -1,124 +1,124 @@
-palabra,significado
-a,"énfasis"
-akesi,"reptil, anfibio"
-ala,"no, negación"
-alasa,"cazar, busqueda"
-ali,"todo, vida, universo, 100"
-anpa,"debajo, inclinarse, abajo"
-ante,"diferente, cambio"
-anu,"o, eleccion, decidir"
-awen,"duradero, mantener, proteger"
-e,antes del objeto directo
-en,se situa entre varios sujetos
-esun,"mercado, tienda, comprar/vender"
-ijo,"cosa, evento, algo, materia"
-ike,"malo, negativo, no-esencial"
-ilo,"herramienta, máquina, dispositivo"
-insa,"interior, dentro, en medio"
-jaki,"desagradable, sucio, tóxico"
-jan,"humano, persona, alguien"
-jelo,amarillo
-jo,"tener, llevar, contener, sostener"
-kala,"pescado, animal marino"
-kalama,"sonido, ruido"
-kama,"llegar, venir, futuro"
-kasi,"planta, vegetación, hierba, hoja"
-ken,"poder, ser capaz"
-kepeken,"usar, con, por medio de"
-kili,"fruta, vegetal, seta"
-kin,"tambien, además"
-kiwen,"duro, metal, roca, piedra"
-ko,"arcilla, masa, pasta, polvo"
-kon,"aire, respiración, invisible"
-kule,"color, pigmento, LGBT+"
-kulupu,"comunidad, grupo, sociedad"
-kute,"oreja, escuchar, atender"
-la, introduce un contexto previo
-lape,"dormir, descansar"
-laso,azul
-lawa,"cabeza, mente, control, intención"
-len,"ropa, tela, textil, capa"
-lete,"frio, enfriar, crudo"
-li, separa sujeto y verbo
-lili,"pequeño, enano, poco"
-linja,"objeto largo y flexible, cuerda, conexión"
-lipu,"objeto plano, libro, documento, website"
-loje,rojo
-lon,"lugar, real, verdadero, existir"
-luka,"brazo, mano, tocar"
-lukin,"ojo, mirar, ver"
-lupa,"puerta, agujero"
-ma,"territorio, espacio"
-mama,"padre, madre, origen"
-mani,"dinero, riqueza"
-meli,"mujer, femenino, esposa"
-mi,"Yo, mi, nosotros, nosotras"
-mije,"hombre, masculino, marido"
-moku,"comer, beber, consumir"
-moli,"muerto, morir, matar"
-monsi,"espalda, detrás, trasero"
-mu,"ruido o comunicación animal"
-mun,"luna, estrella, brillo"
-musi,"artistico, entretenimiento, jugar, divertido"
-mute,"muchos, varios, mas, 20"
-namako,"embellecer, extra, especias"
-nanpa,"número"
-nasa,"extraño, loco, raro, tonto, alcohol"
-nasin,"camino, doctrina, método"
-nena,"relieve, bache, montaña, cuesta"
-ni,"esto, eso"
-nimi,"nombre, palabra"
-noka,"pie, pierna, organo locomotor"
-o,hey! O!
-oko,"ojo, ocular, visual"
-olin,"amor, tener compasión, respeto, mostrar afecto"
-ona,"el, ella, eso, elle"
-open,"inicio, empezar, abrir, encender"
-pakala,"roto, dañado, herido, desastre)"
-pali,"hacer, trabajar, tomar acción en, construir"
-palisa,"palo, vara, rama, tronco, objeto largo y duro"
-pan,"cereal y derivados, pan, pasta"
-pana,"dar, enviar, emitir, proveer, poner, soltar"
-pi,"se usa para modificar otra palabra"
-pilin,"corazón, sentir"
-pimeja,"negro, apagado"
-pini,"terminar, fin, pasado"
-pipi,"bicho, insecto"
-poka,"lado, próximo, cadera"
-poki,"contenedor, bolsa, caja"
-pona,"bueno, positivo, útil, amigable, pacífico, simple"
-pu,diccionario toki pona
-sama,"igual, similar, hermano, compañero"
-seli,"fuego, cocinar, fuente de calor"
-selo,"forma exterior, piel, rodear"
-seme, pregunta
-sewi,"arriba, elevado"
-sijelo,"cuerpo, estado fisico, torso"
-sike,"círculo, esfera"
-sin,"nuevo, fresco"
-sina,tu
-sinpin,"cara, principal, frente, muro"
-sitelen,"imagen, fotografía, dibujo, escrito"
-sona,"saber, ser habilidoso en, conocimiento"
-soweli,"animal, bestia, mamífero, animal terrestre"
-suli,"grande, pesado, largo, alto"
-suno,"sol, luz, brillo"
-supa,"superficie horizontal, objeto sobre el que dormir"
-suwi,"dulce, fragancia, lindo, inocente, adorable"
-tan,"por, de, porque, origen, causa"
-taso,"pero, sin embargo, solo"
-tawa,"ir a, hacia, desde la perspectiva de, moverse, ir a..."
-telo,"agua, liquido, fluido, mojado, bebidas"
-tenpo,"tiempo, duración, momento"
-toki,"comunicar, decir, hablar"
-tomo,"espacio interior, edificio, hogar, habitación"
-tu,dos
-unpa,"sexo, sensual"
-uta,"boca, labios, cavidad oral, mandíbula"
-utala,"batalla, reto, competir, difícil"
-walo,"blanco, blanquecino, pálido"
-wan,"único, unido, uno"
-waso,"pájaro, criatura voladora, animal con alas"
-wawa,"fuerte, poderoso, confianza, intenso"
-weka,"ausente, lejos, ignorado, echar de menos"
-wile,"querer, deber, necesitar"
+palabra,significado,id
+a,"énfasis",1
+akesi,"reptil, anfibio",2
+ala,"no, negación", 3
+alasa,"cazar, busqueda", 4
+ali,"todo, vida, universo, 100", 5
+anpa,"debajo, inclinarse, abajo", 6
+ante,"diferente, cambio", 7
+anu,"o, eleccion, decidir", 8
+awen,"duradero, mantener, proteger", 9
+e,antes del objeto directo, 10
+en,se situa entre varios sujetos, 11
+esun,"mercado, tienda, comprar/vender", 12
+ijo,"cosa, evento, algo, materia", 13
+ike,"malo, negativo, no-esencial", 14
+ilo,"herramienta, máquina, dispositivo", 15
+insa,"interior, dentro, en medio", 16
+jaki,"desagradable, sucio, tóxico", 17
+jan,"humano, persona, alguien", 18
+jelo,amarillo, 19
+jo,"tener, llevar, contener, sostener", 20
+kala,"pescado, animal marino", 21
+kalama,"sonido, ruido", 22
+kama,"llegar, venir, futuro", 23
+kasi,"planta, vegetación, hierba, hoja", 24
+ken,"poder, ser capaz", 25
+kepeken,"usar, con, por medio de", 26
+kili,"fruta, vegetal, seta", 27
+kin,"tambien, además", 28
+kiwen,"duro, metal, roca, piedra", 29
+ko,"arcilla, masa, pasta, polvo", 30
+kon,"aire, respiración, invisible", 31
+kule,"color, pigmento, LGBT+", 32
+kulupu,"comunidad, grupo, sociedad", 33
+kute,"oreja, escuchar, atender", 34
+la, introduce un contexto previo, 35
+lape,"dormir, descansar", 36
+laso,azul, 37
+lawa,"cabeza, mente, control, intención", 38
+len,"ropa, tela, textil, capa", 39
+lete,"frio, enfriar, crudo", 40
+li, separa sujeto y verbo, 41
+lili,"pequeño, enano, poco", 42
+linja,"objeto largo y flexible, cuerda, conexión", 43
+lipu,"objeto plano, libro, documento, website", 44
+loje,rojo, 45
+lon,"lugar, real, verdadero, existir", 46
+luka,"brazo, mano, tocar", 47
+lukin,"ojo, mirar, ver", 48
+lupa,"puerta, agujero", 49
+ma,"territorio, espacio", 50
+mama,"padre, madre, origen", 51
+mani,"dinero, riqueza", 52
+meli,"mujer, femenino, esposa", 53
+mi,"Yo, mi, nosotros, nosotras", 54
+mije,"hombre, masculino, marido", 55
+moku,"comer, beber, consumir", 56
+moli,"muerto, morir, matar", 57
+monsi,"espalda, detrás, trasero", 58
+mu,"ruido o comunicación animal", 59
+mun,"luna, estrella, brillo", 60
+musi,"artistico, entretenimiento, jugar, divertido", 61
+mute,"muchos, varios, mas, 20", 62
+namako,"embellecer, extra, especias", 63
+nanpa,"número", 64
+nasa,"extraño, loco, raro, tonto, alcohol", 65
+nasin,"camino, doctrina, método", 66
+nena,"relieve, bache, montaña, cuesta", 67
+ni,"esto, eso", 68
+nimi,"nombre, palabra", 69
+noka,"pie, pierna, organo locomotor", 70
+o,hey! O!, 71
+oko,"ojo, ocular, visual", 72
+olin,"amor, tener compasión, respeto, mostrar afecto", 73
+ona,"el, ella, eso, elle", 74
+open,"inicio, empezar, abrir, encender", 75
+pakala,"roto, dañado, herido, desastre)", 76
+pali,"hacer, trabajar, tomar acción en, construir", 77
+palisa,"palo, vara, rama, tronco, objeto largo y duro", 78
+pan,"cereal y derivados, pan, pasta", 79
+pana,"dar, enviar, emitir, proveer, poner, soltar", 80
+pi,"se usa para modificar otra palabra", 81
+pilin,"corazón, sentir", 82
+pimeja,"negro, apagado", 83
+pini,"terminar, fin, pasado", 84
+pipi,"bicho, insecto", 85
+poka,"lado, próximo, cadera", 86
+poki,"contenedor, bolsa, caja", 87
+pona,"bueno, positivo, útil, amigable, pacífico, simple", 88
+pu,diccionario toki pona, 89
+sama,"igual, similar, hermano, compañero", 90
+seli,"fuego, cocinar, fuente de calor", 91
+selo,"forma exterior, piel, rodear", 92
+seme, pregunta, 93
+sewi,"arriba, elevado", 94
+sijelo,"cuerpo, estado fisico, torso", 95
+sike,"círculo, esfera", 96
+sin,"nuevo, fresco", 97
+sina,tu, 98
+sinpin,"cara, principal, frente, muro", 99
+sitelen,"imagen, fotografía, dibujo, escrito", 100
+sona,"saber, ser habilidoso en, conocimiento", 101
+soweli,"animal, bestia, mamífero, animal terrestre", 102
+suli,"grande, pesado, largo, alto", 103
+suno,"sol, luz, brillo", 104
+supa,"superficie horizontal, objeto sobre el que dormir", 105
+suwi,"dulce, fragancia, lindo, inocente, adorable", 106
+tan,"por, de, porque, origen, causa", 107
+taso,"pero, sin embargo, solo", 108
+tawa,"ir a, hacia, desde la perspectiva de, moverse, ir a...", 109
+telo,"agua, liquido, fluido, mojado, bebidas", 110
+tenpo,"tiempo, duración, momento", 111
+toki,"comunicar, decir, hablar", 112
+tomo,"espacio interior, edificio, hogar, habitación", 113
+tu,dos, 114
+unpa,"sexo, sensual", 115
+uta,"boca, labios, cavidad oral, mandíbula", 116
+utala,"batalla, reto, competir, difícil", 117
+walo,"blanco, blanquecino, pálido", 118
+wan,"único, unido, uno", 119
+waso,"pájaro, criatura voladora, animal con alas", 120
+wawa,"fuerte, poderoso, confianza, intenso", 121
+weka,"ausente, lejos, ignorado, echar de menos", 122
+wile,"querer, deber, necesitar", 123
