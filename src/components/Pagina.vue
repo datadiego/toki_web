@@ -290,7 +290,7 @@ button{
 @media screen and (max-width: 670px){
 
     #pregunta_actual{
-        font-size: 40px;
+        font-size: 3em;
         margin: 20px;
         margin-bottom: 20px;
     }

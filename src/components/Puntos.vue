@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1> 👌 {{ aciertos }} 💀 {{ fallos }}</h1>
+        <h1 id="puntos"> 👌 {{ aciertos }} 💀 {{ fallos }}</h1>
     </div>
 </template>
 
@@ -11,5 +11,10 @@ export default {
 </script>
 
 <style>
-
+#puntos{
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
 </style>
