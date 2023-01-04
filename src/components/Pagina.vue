@@ -27,7 +27,7 @@
         <div>
             <h1>⚙️ Opciones ⚙️</h1>
             <SelectorTipoPregunta @tipo-pregunta-cambiada="actualizarTipoPreguntas" />
-            <SelectorLeccion @leccion-cambiada="actualizarLeccion" />
+            <!-- <SelectorLeccion @leccion-cambiada="actualizarLeccion" /> -->
 
         </div>
 
