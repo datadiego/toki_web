@@ -42,6 +42,7 @@ import PreguntaResultado from './PreguntaResultado.vue'
 import Puntos from './Puntos.vue'
 
 import leccion1 from '../assets/tokipona.csv'
+import leccion2 from '../assets/frases_comunes.csv'
 
 
 export default {
@@ -63,7 +64,8 @@ export default {
             estado_respuesta: "esperando",
             numero_ronda: 0,
             leccion1: leccion1,
-            lecciones: [leccion1],
+            leccion2: leccion2,
+            lecciones: [leccion1, leccion2],
         }
     },
     methods:{
@@ -295,7 +297,7 @@ button{
         color: antiquewhite ;
         border: 6px solid #FFD166;
         box-shadow: 0px 8px 0px #073B4C;
-        font-size: 40px;
+        font-size: 25px;
         border-radius: 10px;
         padding: 6px;
         margin: 0px;
@@ -320,14 +322,20 @@ button{
         border-radius: 10px;
         padding: 6px;
         margin: 20px;
+        height: 80px;
     }
     #respuesta_correcta{
         margin-bottom: 20px;
         font-size: 20px;
+        padding: 6px;
+        min-height: 80px;
     }
     #respuesta_incorrecta{
         margin-bottom: 20px;
         font-size: 20px;
+        padding: 6px;
+        
+        min-height: 80px;
     }
 
     button{
@@ -337,9 +345,10 @@ button{
     h1, h2{
         margin:10px;
     }
+
     #juego{
         width: 80%;
-        min-height: 310px;
+        min-height: 350px;
     }
     li{
         font-size: 20px;
