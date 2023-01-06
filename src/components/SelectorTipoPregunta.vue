@@ -30,5 +30,20 @@ export default {
 </script>
 
 <style>
+select{
+  min-width: 300px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ff00ff;
+  color: #212121;
+  border: 6px solid #a000a0;
+  box-shadow: 3px 3px 0px #550044;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
 
+@media screen and (max-width: 600px) {
+
+}
 </style>

@@ -97,10 +97,23 @@ li:hover{
 li:active{
     background-color: lightgreen;
 }
-@media screen and (min-width: 600px){
-    li{
-        font-size: 1.5;
+@media screen and (max-width: 600px){
+    li.toki{
+        display:inline-block;
+        padding: 10px;
+        border-radius: 12px;
+        list-style: none;
+        width: 70%;
+        text-align: center;
+        background-color: #118AB2;
+        color: antiquewhite;
+        border: 6px solid #FFD166;
+        box-shadow: 3px 3px 0px #073B4C;
+        margin-bottom: 30px;
+        cursor: pointer;
+        font-size: 2em;
     }
+
 }
 
 </style>

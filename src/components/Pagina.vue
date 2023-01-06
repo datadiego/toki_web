@@ -27,7 +27,7 @@
         <div>
             <h1>⚙️ Opciones ⚙️</h1>
             <SelectorTipoPregunta @tipo-pregunta-cambiada="actualizarTipoPreguntas" />
-            <!-- <SelectorLeccion @leccion-cambiada="actualizarLeccion" /> -->
+            <SelectorLeccion @leccion-cambiada="actualizarLeccion" />
 
         </div>
 
@@ -203,12 +203,13 @@ body{
 #juego{
     background-color: #06D6A0;
     padding: 12px;
+    padding-top: 0;
     border-radius: 12px;
     box-shadow: 0px 8px 0px #073B4C;
     border: 6px solid #FFD166;
     margin: 0px;
     width: 600px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 #pregunta_actual{
     background-color: #118AB2  ;
@@ -290,10 +291,26 @@ button{
 @media screen and (max-width: 670px){
 
     #pregunta_actual{
-        font-size: 3em;
-        margin: 20px;
-        margin-bottom: 20px;
+        background-color: #118AB2  ;
+        color: antiquewhite ;
+        border: 6px solid #FFD166;
+        box-shadow: 0px 8px 0px #073B4C;
+        font-size: 40px;
+        border-radius: 10px;
+        padding: 6px;
+        margin: 0px;
+        min-width: 100px;
+        margin-bottom: 30px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
+    #pregunta_actual.toki{
+        font-size: 100px;
+    }
+    
     #respuesta{
         background-color: #ff00ff  ;
         color: #212121 ;
@@ -301,14 +318,16 @@ button{
         box-shadow: 0px 8px 0px #550044;
         font-size: 30px;
         border-radius: 10px;
-        padding: 12px;
+        padding: 6px;
         margin: 20px;
     }
     #respuesta_correcta{
         margin-bottom: 20px;
+        font-size: 20px;
     }
     #respuesta_incorrecta{
         margin-bottom: 20px;
+        font-size: 20px;
     }
 
     button{
@@ -322,7 +341,9 @@ button{
         width: 80%;
         min-height: 310px;
     }
-    
+    li{
+        font-size: 20px;
+    }
     
 }
 </style>
