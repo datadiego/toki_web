@@ -310,7 +310,7 @@ button{
         
     }
     #pregunta_actual.toki{
-        font-size: 100px;
+        font-size: 2rem;
     }
     
     #respuesta{
